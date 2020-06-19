@@ -1,0 +1,310 @@
+#green-section {
+
+	.text--h4 {
+		position: relative;
+		top: -11px;
+		left: 10px;
+		font-size: 1.26em;
+		line-height: 1.2em;		
+	}
+
+    .sub-banner-wrapper {
+        margin-top: -27px;
+        .sub-banner {
+            width: 318px;
+            margin-left: -115px;
+        }
+    }
+
+    .bee {
+        position: absolute;
+        height: 200px;
+        top: -1%;
+        left: -15%;
+        z-index: 3;
+
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            top: 1%;
+            left: -1%;
+        }
+    }
+
+    @media (max-width: map-get($map: $breakpoints, $key: 'md')) {
+        .section__header__wrapper .banner {
+            margin-bottom: 10px;
+        }
+    }
+
+    .align-left {
+        padding-right: 10px;
+    }
+
+    .align-right {
+        padding-left: 10px;
+    }
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+        .align-left {
+            padding-right: 20px;
+        }
+
+        .align-right {
+            padding-left: 20px;
+        }
+    }
+
+    .item {
+        margin-bottom: 27px;
+    }
+
+    .truck {
+        width: 250px;
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            margin-top: -55px;
+            margin-right: 5px;
+        }
+    }
+
+    .recycling-pfeil {
+        width: 157px;
+    }
+
+    .wiederauf-pfeil {
+        width: 170px;
+    }
+
+    .wiederauf-pfeil {
+        margin-top: -16px;
+
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            margin-top: -25px;
+            margin-right: 8px;
+        }
+    }
+
+    .recycling-pfeil {
+        position: relative;
+        margin-top: -26px;
+        margin-left: 2px;
+
+        > .snug {
+            position: absolute;
+            width: 100px;
+            top: 40%;
+            right: -40%;
+        }
+    }
+
+    .reparatur-part {
+        margin-top: -80px;
+    }
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+        .reparatur-part {
+            margin-top: -318px;
+            margin-left: 16px;
+        }
+    }
+
+    .reparatur {
+        width: 240px;
+        margin-top: -37px;
+        position: relative;
+
+        .reinigung {
+            position: absolute;
+            width: 100px;
+            top: 100%;
+            right: 0%;
+
+            @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+                top: auto;
+                bottom: 2%;
+                right: -26%;
+                width: 140px;
+            }
+        }
+    }
+
+    .recycling-vorgang {
+        width: 241px;
+		margin-top: 53px;
+		margin-right: -14px;
+    }
+
+
+    .rohstoff-part {
+        margin-top: 10px;
+    }
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+        .rohstoff-part {
+            margin-top: -177px;
+        }
+    }
+
+    .verkauf-container {
+        position: relative;
+
+        & > .ersatzteile {
+            position: absolute;
+            width: 120px;
+            bottom: 90%;
+
+            @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+                width: 175px;
+                left: 3%;
+                bottom: 8%;
+            }
+        }
+    }
+
+    .verkauf {
+        width: 294px;
+        margin-top: 20px;
+
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            margin-top: 33px;
+            margin-right: -15px;
+        }
+    }
+
+    .rohstoff {
+        width: 211px;
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            margin-top: 32px;
+            margin-left: -3px;
+
+        }
+    }
+
+    .erloes {
+        width: 124px;
+        position: relative;
+        z-index: 3;
+        margin-bottom: 20px;
+        position: relative;
+		top: -31px;
+		left: -1px;
+    }
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+
+        .erloes {
+            margin-bottom: -142px;
+        }
+    }
+    @media (max-width: $container-max-width - 1) {
+    	.bee {
+		    height: 185px;
+		    top: 1%;
+		    left: -6%;
+    	}
+	    .section__header__wrapper {	
+	    	margin-top: 13px;
+			& > .banner {		
+			    width: 248px;
+			    position: relative;
+			    left: -2px;		
+			}
+		}  
+		.section__header__wrapper.sub-banner-wrapper {
+			margin-top: 0;
+		}
+		.sub-banner-wrapper .sub-banner {	
+		    width: 282px;
+		    margin-left: -12px;
+		    position: relative;
+		    top: -10px;	
+		}  
+		.item {		
+		    margin-bottom: 0;		
+		}	
+		.truck {		
+		    width: 225px;
+		    top: -11px;
+		    left: 5px;		
+		}	
+		.text--h4 {		
+		    position: relative;
+		    top: -5px;
+		    left: -38px;
+		    font-size: 1.12em;
+		    line-height: 1.25em;
+		    width: 125%;	
+		}	
+		.wiederauf-pfeil {		
+		    margin-top: 4px;
+		    position: relative;
+		    left: -19px;
+		    height: 198px;
+		    img {
+			    max-width: 104%;
+			    max-height: 104%;
+		    }	
+		}	
+		.recycling-pfeil {		
+		    position: relative;
+		    margin-top: 13px;
+		    margin-left: 12px;	
+		    img {
+			    max-width: 102%;
+			    max-height: 104%;
+		    }
+			& > .snug {			
+			    position: absolute;
+			    width: 86px;
+			    top: 41%;
+			    right: -9%;			
+			}
+		}		
+		.reparatur {
+		    width: 270px;
+		    margin-top: -77px;
+		    position: relative;
+		    left: -48px;
+		    img {
+			    max-width: 143%;
+			    max-height: 200%;			
+			}	
+			.reinigung {			
+			    position: absolute;
+			    width: 87px;
+			    top: 104%;
+			    right: 2%;			
+			}			
+		}	
+		.recycling-vorgang {		
+		    width: 247px;
+		    margin-top: 73px;
+		    margin-right: -13px;	
+		    img {			
+			    max-width: 135%;			
+			}	
+		}	
+		.verkauf-container {
+			.verkauf img {
+				max-width: 107%;								
+			}
+			& > .ersatzteile {		
+			    position: absolute;
+			    width: 157px;
+			    bottom: 78%;
+			    left: -31px;		
+			}	
+		}
+		.rohstoff {		
+		    width: 213px;
+		    top: 8px;
+		    left: 6px;	
+		    img {
+			    max-width: 128%;			
+			}	
+		}
+		.erloes {		
+		    width: 112px;
+		    top: -6px;	
+		    margin-bottom: 10px;	
+		}	
+   	}
+}

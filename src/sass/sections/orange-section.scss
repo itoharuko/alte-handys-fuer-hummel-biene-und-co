@@ -1,0 +1,171 @@
+@import '../includes/variables';
+
+#orange-section {
+
+    .left-section {
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            padding-left: 20px;
+        }
+    }
+
+    .sammel-box {
+        position: relative;
+        height: 442px;
+        margin-top: 40px;
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            left: -12%;
+			margin-top: 22px;
+        }
+
+         > .handys {
+            position: absolute;
+            bottom: 96%;
+            right: -5%;
+            width: 120px;
+            @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+                bottom: auto;
+                top: -1%;
+                right: -53%;
+            }
+        }
+    }
+
+    .bin {
+        width: 240px;
+        position: relative;
+        margin-top: 20px;
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            margin-bottom: 15px;
+            margin-top: auto;
+            margin-left: -12px;
+        }
+    }
+
+    .storer {
+        margin-top: 5px;
+        margin-right: -5px;
+        
+        & > span:first-child {        	
+        	font-size: 1.05em;
+			margin-top: 19px;
+			margin-bottom: 4px;
+        }        
+        
+        & > span:first-child > .count {        	
+			margin-top: 21px;
+        }
+       
+       & > span + span {
+	       	font-size: 0.94em;
+			position: relative;
+			left: 1px;
+			top: -9px;
+			line-height: 1.05em;
+	   }
+    }
+
+    .mach-mit {
+        width: 90%;
+        position: relative;
+        left: -50px;
+        margin-top: -30px;
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+            left: -47px;
+			margin-bottom: -3px;
+			margin-top: 91px;
+        }
+
+        & > img {
+            height: 202px;
+			max-width: 121%;
+        }
+    }
+
+    .text-zone {
+    	.text {
+       		font-size: 1.26em;
+       		line-height: 1.13em;
+       		
+       	}
+        > .text + .text {
+            margin-top: 20px;
+            @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+                margin-top: 27px;
+            }
+        }
+
+        @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+			padding-top: 39px;
+			padding-bottom: 20px;
+			padding-left: 2px;
+			width: 90%;
+        }       
+    }
+   
+    @media (max-width: $container-max-width - 1) {
+    	padding-bottom: 4px;
+    	
+    	.section__header__wrapper {
+    		margin-top: 14px;
+    	}
+		.section__header__wrapper > .banner {		
+		    width: 355px;
+		    position: relative;
+		    left: -5px;		
+		}
+	
+		.section__header__wrapper > .small-banner {	
+		    width: 232px;
+		    margin-left: -36px;
+		    margin-top: -8px;
+		}
+		.storer.storer--small {		
+		    height: 160px;
+		    width: 171px;
+		    margin-top: -4px;
+			margin-right: -23px;		
+		}
+		.storer > span:first-child {
+    		font-size: 0.93em;
+    	}
+    	.storer > span + span {
+    		font-size: 0.84em;
+    	}
+	    .mach-mit {
+		    width: 82%;
+		    left: -92px;
+		    & > img {
+    			height: 181px;
+    		}		
+		}
+		.sammel-box {		
+		    height: 392px;
+		    margin-top: 36px;
+		    left: 3px;	
+		    & > .handys {		
+			    bottom: 94%;
+			    right: -13%;
+			    width: 110px;			
+			}	
+		}
+		.text-zone {
+			position: relative;
+			left: -26px;
+			top: 4px;
+			width: 115%;
+			.text {
+			    font-size: 1.12em;
+			    line-height: 1.19em;			
+			}
+			& > .text + .text {			
+			    margin-top: 23px;			
+			}
+		}
+		.bin {		
+		    width: 217px;
+		    position: relative;
+		    margin-top: 14px;
+		    left: 6px;		
+		}	
+	}   
+}

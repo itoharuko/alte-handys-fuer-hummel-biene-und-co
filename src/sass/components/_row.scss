@@ -1,0 +1,46 @@
+@import '../mixins/all';
+@import '../includes/variables';
+
+$row-component: '.row';
+@include flex($component: $row-component);
+
+
+#{$row-component} {
+    position: relative;
+
+    > * {
+        position: relative;
+    }
+
+    &--padded {
+        margin-left: -25px;
+        margin-right: -25px;
+
+        > * {
+           padding-left: 25px;
+           padding-right: 25px;
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    #{$row-component}__col-#{$i} {
+        width: ($i / 12) * 100%;
+    }
+}
+#{$row-component}__col-auto {
+    width: auto;
+}
+
+@each $breakpoint, $value in $breakpoints {
+    @media (min-width: $value) {
+        @for $i from 1 through 12 {
+            #{$row-component}__col-#{$breakpoint}-#{$i} {
+                width: ($i / 12) * 100%;
+            }
+        }
+        #{$row-component}__col-#{$breakpoint}-auto {
+            width: auto;
+        }
+    }
+}

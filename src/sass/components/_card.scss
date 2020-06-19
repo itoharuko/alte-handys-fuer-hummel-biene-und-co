@@ -1,0 +1,34 @@
+@import '../mixins/all';
+@import '../includes/variables';
+
+$card-component: '.card';
+@include flex(
+    $component: $card-component,
+    $flex-direction: 'column',
+    $align-items: 'center',
+    $justify-contents: 'center'
+);
+
+#{$card-component} {
+    margin-bottom: 21px;
+}
+
+#{$card-component}__header {
+    margin-bottom: 15px;
+    .placeholder {
+        height: 80px;
+    }
+}
+
+#{$card-component}__body {
+    font-size: 1.27em;
+    color: #fff;
+    line-height: 1.2em;
+    
+    sub {
+    	line-height: 0.6em;
+		font-size: 0.7em;
+		position: relative;
+		top: 3px;	
+    }
+}

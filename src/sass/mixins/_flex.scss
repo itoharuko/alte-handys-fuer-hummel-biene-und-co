@@ -1,0 +1,122 @@
+/**
+ * flex definition mixins
+*/
+@mixin flex(
+    $component,
+    $flex-direction: "row",
+    $justify-contents: "flex-start",
+    $align-items: "flex-start",
+    $flex-wrap: "wrap"
+) {
+    #{$component} {
+        display: flex;
+        flex-wrap: unquote($string: $flex-wrap);
+        flex-direction: unquote($flex-direction);
+        justify-content: unquote($justify-contents);
+        align-items: unquote($align-items);
+    }
+
+    //flex direction
+    #{$component}--direction-row {
+        flex-direction: row;
+    }
+    #{$component}--direction-column {
+        flex-direction: column;
+    }
+
+    //flex wrap
+    #{$component}--wrap {
+        flex-wrap: wrap;
+    }
+    #{$component}--wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+    #{$component}--nowrap {
+        flex-wrap: nowrap;
+    }
+
+    //main axis alignment of flex items. a.k.a flex-justify-contents
+    #{$component}--justify-contents-start {
+        justify-content: flex-start;
+    }
+    #{$component}--justify-contents-center {
+        justify-content: center;
+    }
+    #{$component}--justify-contents-end {
+        justify-content: flex-end;
+    }
+    #{$component}--justify-contents-space-between {
+        justify-content: space-between;
+    }
+    #{$component}--justify-contents-space-around {
+        justify-content: space-around;
+    }
+
+    //cross axis alignment of flex items. a.k.a flex-align-items
+    #{$component}--align-items-start {
+        align-items: flex-start;
+    }
+    #{$component}--align-items-center {
+        align-items: center;
+    }
+    #{$component}--align-items-end {
+        align-items: flex-end;
+    }
+    #{$component}--align-items-stretch {
+        align-items: stretch;
+    }
+
+    @each $breakpoint, $value in $breakpoints {
+        @media (min-width: $value) {
+            //flex direction
+            #{$component}--#{$breakpoint}-direction-row {
+                flex-direction: row;
+            }
+            #{$component}--#{$breakpoint}-direction-column {
+                flex-direction: column;
+            }
+
+            //flex wrap
+            #{$component}--#{$breakpoint}-wrap {
+                flex-wrap: wrap;
+            }
+            #{$component}--#{$breakpoint}-wrap-reverse {
+                flex-wrap: wrap-reverse;
+            }
+            #{$component}--#{$breakpoint}-nowrap {
+                flex-wrap: nowrap;
+            }
+
+            //main axis alignment of flex items. a.k.a flex-justify-contents
+            #{$component}--#{$breakpoint}-justify-contents-start {
+                justify-content: flex-start;
+            }
+            #{$component}--#{$breakpoint}-justify-contents-center {
+                justify-content: center;
+            }
+            #{$component}--#{$breakpoint}-justify-contents-end {
+                justify-content: flex-end;
+            }
+            #{$component}--#{$breakpoint}-justify-contents-space-between {
+                justify-content: space-between;
+            }
+            #{$component}--#{$breakpoint}-justify-contents-space-around {
+                justify-content: space-around;
+            }
+
+            //cross axis alignment of flex items. a.k.a flex-align-items
+            #{$component}--#{$breakpoint}-align-items-start {
+                align-items: flex-start;
+            }
+            #{$component}--#{$breakpoint}-align-items-center {
+                align-items: center;
+            }
+            #{$component}--#{$breakpoint}-align-items-end {
+                align-items: flex-end;
+            }
+            #{$component}--#{$breakpoint}-align-items-stretch {
+                align-items: stretch;
+            }
+        }
+    }
+}

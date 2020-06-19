@@ -1,0 +1,48 @@
+#footer-section {
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    .row > div + div {
+        margin-top: 20px;
+    }
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+        padding: 46px;
+
+        .row > div + div {
+            margin-top: 0px;
+        }
+    }
+   
+   .container {
+	   	position: relative;
+		top: -24px;
+		left: 4px;
+		font-size: 1.05em;
+		line-height: 1.43em;
+		.row div + div {			
+			position: relative;
+			left: 11px;
+		}
+   }
+   @media (max-width: $container-max-width - 1) {
+   	    padding-top: 46px;
+   	    
+  		.container {
+  			padding-left: 18px;
+			.row div + div {			
+			    position: relative;
+			    left: 0;			
+			}  			
+  		}
+  	  	
+		p {	
+		    font-size: 1.07em;
+		    line-height: 1.24em;		
+		}
+	
+		.row > div + div {		
+		    margin-top: 13px;		
+		}
+   }
+}

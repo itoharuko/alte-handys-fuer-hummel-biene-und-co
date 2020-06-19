@@ -1,0 +1,59 @@
+@import '../../node_modules/source-sans-pro/source-sans-pro.css';
+@import './includes/variables';
+@import './includes/reset';
+@import './includes/modifiers';
+
+@import './components/section';
+@import './components/container';
+@import './components/row';
+@import './components/typography';
+@import './components//card';
+
+.storer {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 224px;
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    &--small {
+        height: 174px;
+        width: 174px;
+    }
+
+    & > span {
+        font-size: 1.24em;
+    }
+
+    & > span + span {
+        line-height: 121%;
+        text-align:center;
+    }
+
+    & > span:first-child {
+        font-weight: 700;
+    }
+
+    & > span:first-child > .count {
+        font-size: 2.4em;
+    }
+
+    &--orange {
+        background-image: url('../assets/images/storers/orange.png');
+        padding-top: 4px;
+    }
+    &--red {
+        background-image: url('../assets/images/storers/red.png');
+    }
+}
+
+@import './sections/blue-section.scss';
+@import './sections/red-section.scss';
+@import './sections/orange-section.scss';
+@import './sections/footer-section.scss';
+@import './sections/green-section.scss';

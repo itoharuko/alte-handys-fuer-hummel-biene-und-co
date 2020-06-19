@@ -1,0 +1,44 @@
+@import '../includes/variables';
+
+#red-section {
+	@media (max-width: $container-max-width - 1) {
+	   
+	   	padding-bottom: 9px;
+	    		
+		.section__header__wrapper {
+		    & > .medium-banner {    	
+				height: 53px;
+				position: relative;
+				left: -5px;
+		    }
+		}
+		
+		.section__header__wrapper {
+		
+		    margin-top: 16px;
+		    
+		}
+	
+		.row--padded > * {		
+			padding: 0;
+		}
+	
+		.card {
+			position: relative;
+			top: 9px;
+			left: -5px;
+			width: 96%;
+		}
+		.card__body {
+	    	font-size: 1.12em;
+	    	position: relative;
+			top: -5px;
+	    }
+	   
+	    .row__col-sm-6:nth-child(even) {
+	    	position: relative;			
+			left: 13px;
+	    }
+	   	   
+	}
+}

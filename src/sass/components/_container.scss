@@ -1,0 +1,20 @@
+@import '../mixins/all';
+@import '../includes/variables';
+
+$container-component: '.container';
+
+#{$container-component} {
+    margin: 0 auto;
+    max-width: $container-max-width;
+    position: relative;
+}
+
+#{$container-component} {
+    margin: 0 auto;
+    max-width: $container-max-width;
+
+    @media (max-width: $container-max-width - 1) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

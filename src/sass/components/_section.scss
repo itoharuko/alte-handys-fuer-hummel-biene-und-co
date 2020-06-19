@@ -1,0 +1,61 @@
+@import '../mixins/all';
+@import '../includes/variables';
+
+$section-component: '.section';
+
+#{$section-component} {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        width: 100%;
+    }
+}
+
+#{$section-component}__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+
+    @media (min-width: map-get($map: $breakpoints, $key: 'md')) {
+        align-items: flex-start;
+    }
+
+    &--no-margin {
+        margin-bottom: 0;
+    }
+}
+
+#{$section-component}__header__wrapper {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > .banner {
+        width: 395px;
+    }
+
+    & > .big-banner {
+        width: 495px;
+    }
+
+    & > .medium-banner {
+        height: 60px;
+    }
+
+    & > .small-banner {
+        width: 260px;
+        margin-left: -27px;
+        margin-top: -14px;
+        position: relative;
+    }
+}
+
+@each $section-color, $value in $section-colors {
+    #{$section-component}--bg-#{$section-color} {
+        background-color: $value;
+    }
+}

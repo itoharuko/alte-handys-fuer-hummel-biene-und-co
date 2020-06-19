@@ -1,0 +1,48 @@
+@import '../mixins/all';
+@import '../includes/variables';
+
+$typography-component: '.text';
+
+#{$typography-component} {
+    font-size: 1.2em;
+
+    &--block {
+        display: block;
+    }
+}
+
+#{$typography-component}--h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+#{$typography-component}--h2 {
+    font-size: 2.1em;
+    font-weight: 700;
+}
+
+#{$typography-component}--h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#{$typography-component}--h4 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+#{$typography-component}--h5 {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#{$typography-component}--h6 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+@each $typography-color, $value in $typography-colors {
+    #{$typography-component}--color-#{$typography-color} {
+        color: $value;
+    }
+}

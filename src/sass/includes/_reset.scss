@@ -1,0 +1,89 @@
+@import './variables';
+
+*, ::before, ::after {
+    //make transparent link selection, adjust last value opacity 0 to 1.0
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+
+body {
+    //prevent callout to copy image, etc when tap to hold
+    -webkit-touch-callout: none;
+    //prevent webkit from resizing text to fit
+    -webkit-text-size-adjust: none;
+
+    background-color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+body, input, select, textarea, button {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: #1b1919;
+}
+
+::input-placeholder {
+    opacity: 1;
+    color: #999;
+}
+
+select[multiple], select[size] {
+    height: auto;
+}
+
+input[disabled], button[disabled], .disabled {
+    cursor: default;
+}
+
+audio, canvas, video, progress {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type='checkbox'], input[type='radio'], .check-box {
+    appearance: checkbox;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+input::-webkit-calender-picker-indicator {
+    -webkit-appearance: none;
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+ul, ol, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+img {
+    display: inline-block;
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    color: #1167a6;
+    text-decoration: none;
+
+    &:visited {
+        color: #1167a6;
+    }
+}

@@ -1,0 +1,105 @@
+@import './variables';
+
+// text alignment
+.--text-center {
+    text-align: center;
+    text-align-last: center;
+}
+.--text-justify {
+    text-align: justify;
+}
+.--text-right {
+    text-align: right;
+}
+
+// text font weight
+.--sharp {
+    font-weight: 500;
+}
+.--bold {
+    font-weight: 700;
+}
+.--faint {
+    font-weight: 200;
+}
+.--normal {
+    font-weight: normal !important;
+}
+
+// text sizes
+.--small {
+    font-size: 0.9em;
+}
+
+.--hide {
+    display: none;
+}
+
+.--show {
+    display: inherit;
+}
+
+@each $breakpoint, $value in $breakpoints {
+    @media (min-width: $value) {
+        .--#{$breakpoint}-hide {
+            display: none;
+        }
+
+        .--#{$breakpoint}-show {
+            display: block;
+        }
+    }
+}
+
+//element paddings
+@each $dimension, $value in $dimensions {
+    // output padding
+    .--pd-l-#{$dimension} {
+        padding-left: $value;
+    }
+    .--pd-r-#{$dimension} {
+        padding-right: $value;
+    }
+    .--pd-t-#{$dimension} {
+        padding-top: $value;
+    }
+    .--pd-b-#{$dimension} {
+        padding-bottom: $value;
+    }
+    .--pd-h-#{$dimension} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+    .--pd-v-#{$dimension} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    .--pd-#{$dimension} {
+        padding: $value;
+    }
+
+    // output margins
+    .--mg-l-#{$dimension} {
+        margin-left: $value;
+    }
+    .--mg-r-#{$dimension} {
+        margin-right: $value;
+    }
+    .--mg-t-#{$dimension} {
+        margin-top: $value;
+    }
+    .--mg-b-#{$dimension} {
+        margin-bottom: $value;
+    }
+    .--mg-h-#{$dimension} {
+        margin-left: $value;
+        margin-right: $value;
+    }
+    .--mg-v-#{$dimension} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+    .--mg-#{$dimension} {
+        margin: $value;
+    }
+}

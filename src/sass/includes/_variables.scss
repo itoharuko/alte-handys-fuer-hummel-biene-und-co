@@ -1,0 +1,112 @@
+$breakpoints: (
+    'sm': 414px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px
+);
+
+$container-max-width: 940px;
+
+$navbar-height: 100px;
+
+$typography-colors: (
+    'silver-white': #abbfd9,
+    'dark-blue': #042e4d,
+    'light-blue': #1167a6,
+    'white': #fff
+);
+
+$section-colors: (
+    'blue': #084a78,
+    'red': #5d171b,
+    'orange': #e7792e,
+    'footer': #084a78,
+    'green': #6cb744,
+);
+
+$dimensions: (
+    auto: auto,
+    none: 0,
+    xxs: 8px,
+    xs: 16px,
+    sm: 24px,
+    md: 32px,
+    lg: 48px,
+    xlg: 54px,
+    xxlg: 64px
+);
+
+// $colors: (
+//     'primary': rgb(217, 63, 21),
+//     'label': #6e6e6e,
+//     'mute': rgb(180, 180, 180),
+//     'grey': rgb(77, 77, 88),
+//     'light-grey': #737373,
+//     'white': #fff
+// );
+
+// $bg-palletes: (
+//     'primary': rgb(217, 63, 21),
+//     'secondary': rgb(243, 243, 243),
+//     'textiary': rgb(235, 235, 235),
+//     'form': rgb(236, 236, 236),
+//     'dark': #797979
+// );
+
+// $text-palletes: (
+//     'primary': #fff,
+//     'secondary': #bbb,
+//     'textiary': #494948,
+//     'form': #494948,
+//     'dark': #fff
+// );
+
+// //element size variables
+// $sizing-keys: xs, sm, md, lg, xlg, xxlg;
+
+// $font-sizings: (
+//     xs: 1.3em,
+//     sm: 1.16em,
+//     md: 1.3em,
+//     lg: 2em,
+//     xlg: 3em,
+//     xxlg: 4.6em
+// );
+
+// $padding-sizings: (
+//     xs: 12px 14px,
+//     sm: 17px 20px,
+//     md: 23px 12px,
+//     lg: 16px 32px,
+//     xlg: 18px 26px,
+//     xxlg: 20px 40px
+// );
+
+// $border-radius-sizings: (
+//     xs: 7px,
+//     sm: 9px,
+//     md: 9px,
+//     lg: 14px,
+//     xlg: 16px,
+//     xxlg: 18px
+// );
+
+// //element paddings & margins
+// $dimensions: (
+//     none: 0,
+//     auto: auto,
+//     xs: 10px,
+//     sm: 20px,
+//     md: 30px,
+//     lg: 46px,
+//     xlg: 54px
+// );
+
+// @function joinPath($url) {
+//     @if(variable-exists($name: 'path')) {
+//         @return quote($string: $path + $url);
+//     }
+//     @else {
+//         @return quote($string: '../../' + $url);
+//     }
+// }
